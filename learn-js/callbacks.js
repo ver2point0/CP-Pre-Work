@@ -1,5 +1,12 @@
-let callback = function(string) {
-	console.log(string);
+function useCallback(callback)
+{
+    callback(1);
+    callback(2);
+    callback(3);
 }
 
-callback("Hi!");
+function callback(sentence) {
+    console.log(sentence);
+}
+
+useCallback(callback);
